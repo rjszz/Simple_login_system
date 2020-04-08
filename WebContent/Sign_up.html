@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<title>注册界面</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="S-verify.js"> </script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>	
+</head> 
+<body>
+<script type="text/javascript" src="background.js"> </script>
+<div class="container" align="center">
+	<div class="col-md-6" style="margin-top: 10%;">
+		<div class="inset">
+			<form name="Sign_up" id="Sign_up" method="Sign_up" action="">
+				<input type="hidden" name="enews" value="Sign_up">
+				<div>
+					<h2>新用户注册</h2>
+					<span style="text-align: left;text-indent: 0.4em;"><label>用户名</label></span>
+					<span><input type="text" id="Username" class="textbox" required="required"> </span>
+				</div>
+				<div>
+					<span style="text-align: left;text-indent: 0.4em;"><label>密码</label></span>
+					<span><input  type="password" id="Password" class="textbox" required="required"></span>
+				</div>
+				<div>
+					<span style="text-align: left;text-indent: 0.4em;"><label>确定密码</label></span>
+					<span><input  type="password" id="Repassword"  class="textbox" required="required" ></span>
+				</div>
+				<div>
+					<span style="text-align: left;text-indent: 0.4em;"><label>电子邮箱</label></span>
+					<span><input  type="text" id="Email"  class="textbox"></span>
+				</div>
+				<div class="sign">
+					<input type="submit"  class="submit" value="注册" onClick="Judge()"/>
+					<input type="submit"  class="submit" value="返回" onClick="Login()"/>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
